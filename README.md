@@ -4,15 +4,6 @@
 Current manual order management in local shops leads to human error, slow product lookup, and excessive paper use. There is no real-time stock monitoring, making accurate daily/weekly sales reports difficult. This project digitizes records to improve efficiency and reliability.  
 Order Track is a web-based Shop Management System that replaces manual registers with a centralized database to automate order tracking, inventory updates, and report generation.
 
-## Project Members
-1. SHAIKH MOHAMMED HASNAIN JAFFER — Team Leader  
-2. SAYYED ADIL DASTAGIR  
-3. SHAIKH ZAYED ASHRAFALI  
-4. SAYED AYAAN AYAZ AHMED
-
-## Project Guides
-1. PROF. ANUPAM CHOUDHARY — Primary Guide
-
 ## Deployment Steps
 Follow these steps to run the project locally:
 1. Clone the repository:
@@ -46,24 +37,9 @@ Follow these steps to run the project locally:
    npm test
    ```
 
-## Subject Details
-- Class: SE (COMP) Div A — 2025-2026  
-- Subject: Mini Project-I (MP-1)  
-- Project Type: Mini Project
 
 ## Platform, Libraries and Frameworks used
 1. Node.js — https://nodejs.org  
 2. Express.js — https://expressjs.org  
 3. TensorFlow.js — https://tensorflowjs.com
 
-## Dataset Used
-1. Kaggle Dataset 1 — https://kaggle.com/dataset1  
-2. Kaggle Dataset 2 — https://kaggle.com/dataset2
-
-## References
-- https://kaggle.com/dataset1  
-- https://kaggle.com/dataset2
-
-## Notes
-- Replace placeholders (repo URL, .env values, migration commands) with project-specific values.
-- For production: containerize with Docker, use HTTPS, and store secrets in a secret manager.
