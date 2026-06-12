@@ -1,45 +1,177 @@
-# Order Track
+🧾 OrderTrack – Smart Order Management System
 
-> Abstract : Problem Statement  
-Current manual order management in local shops leads to human error, slow product lookup, and excessive paper use. There is no real-time stock monitoring, making accurate daily/weekly sales reports difficult. This project digitizes records to improve efficiency and reliability.  
-Order Track is a web-based Shop Management System that replaces manual registers with a centralized database to automate order tracking, inventory updates, and report generation.
+👤 Participant Details
 
-## Deployment Steps
-Follow these steps to run the project locally:
-1. Clone the repository:
-   ```
-   git clone <repo-url>
-   cd biryani-shop-main
-   ```
-2. Install backend dependencies:
-   ```
-   npm install
-   ```
-3. Create a `.env` file (copy `.env.example`) and set required variables:
-   - PORT (default 3000)
-   - DATABASE_URL
-   - JWT_SECRET
-4. Start or configure the database (Postgres/MySQL) and run migrations/seeders:
-   ```
-   npm run migrate
-   npm run seed
-   ```
-5. Start the development server:
-   ```
-   npm run dev
-   ```
-6. Open the app in a browser:
-   ```
-   http://localhost:3000
-   ```
-7. Run tests:
-   ```
-   npm test
-   ```
+- Name: Zayed Shaikh
 
 
-## Platform, Libraries and Frameworks used
-1. Node.js — https://nodejs.org  
-2. Express.js — https://expressjs.org  
-3. TensorFlow.js — https://tensorflowjs.com
+---
+
+📌 Project Description
+
+OrderTrack is a modern web-based Order Management System designed for wholesalers, bulk-order businesses, and order-based shops.
+
+Unlike traditional retail billing systems, OrderTrack focuses on businesses that handle custom, multi-item, and large-volume orders, where managing orders manually in notebooks becomes slow, error-prone, and difficult to track.
+
+It helps business owners:
+
+- Digitally manage orders
+- Track payments (advance / remaining)
+- Maintain complete order history
+- Communicate easily with customers
+
+---
+
+🎯 Problem Statement
+
+Many small and medium businesses still rely on manual registers to track bulk orders. This leads to:
+
+- ❌ Human errors in calculations
+- ❌ Difficult tracking of pending payments
+- ❌ No proper order history
+- ❌ Poor customer communication
+
+OrderTrack solves this by digitizing the entire process.
+
+---
+
+🚀 Key Features
+
+- 🔐 Secure Authentication (Supabase Auth)
+- 🧾 Multi-item Order Creation (Dynamic Cart)
+- 💰 Automatic Payment Calculation (Advance, Remaining, Status)
+- 📊 Order History & Tracking
+- 📱 Click-to-Call & WhatsApp Integration
+- ⚡ Real-time UI Updates using React
+- 🔒 Data Isolation using Row Level Security (RLS)
+
+---
+
+🛠️ Tech Stack (Simple Explanation)
+
+Frontend
+
+- React 18 → Builds fast and interactive UI
+- TypeScript → Reduces bugs with type safety
+- Vite → Fast development and build tool
+- Tailwind CSS → Makes UI clean and responsive
+- Lucide React → Icons for better UI
+
+Backend & Database
+
+- Supabase → Handles backend (Auth + Database)
+- PostgreSQL → Stores all data securely
+
+---
+
+🧠 How It Works (Simple)
+
+- User logs in securely
+- Creates a new order
+- Adds multiple items dynamically
+- System calculates:
+  - Total amount
+  - Advance paid
+  - Remaining amount
+- Order is saved in database
+- User can:
+  - View order history
+  - Call customer
+  - Send WhatsApp receipt
+
+---
+
+🗄️ Database Structure (Simple)
+
+1. Users
+
+Stores shop owner details
+
+2. Orders
+
+Stores main order info:
+
+- Customer name
+- Total amount
+- Payment status
+
+3. Order Items
+
+Stores products inside each order:
+
+- Product name
+- Quantity
+- Price
+
+---
+
+🧪 Key Highlights (For Judges / Presentation)
+
+- ✅ Clean and simple UI
+- ✅ Real-world business use case (wholesale orders)
+- ✅ Proper database design (Orders + Items separation)
+- ✅ Secure data using RLS
+- ✅ Smart calculations (auto payment status)
+- ✅ Improves customer communication
+
+---
+
+⚙️ Installation & Setup
+
+1. Clone Repository
+
+git clone https://github.com/zayedshaikh7/ordertrack
+cd ordertrack
+
+2. Install Dependencies
+
+npm install
+
+3. Setup Environment Variables
+
+Create a ".env" file:
+
+VITE_SUPABASE_URL=your_url
+VITE_SUPABASE_ANON_KEY=your_key
+
+4. Run Project
+
+npm run dev
+
+Open in browser:
+
+http://localhost:5173
+
+---
+
+🌐 Live Demo
+
+👉 https://ordertrack-vp5b.onrender.com/
+
+---
+
+📷 Screenshots
+
+
+
+---
+
+🔗 GitHub Repository
+
+👉 https://github.com/zayedshaikh7/ordertrack
+
+---
+
+🌍 Future Improvements
+
+- 📦 Inventory management system
+- 📊 Advanced analytics dashboard
+- 📱 Mobile app version
+- 🧾 PDF invoice generation
+
+---
+
+🤝 Contribution
+
+This is an open-source project. Contributions are welcome!
 
